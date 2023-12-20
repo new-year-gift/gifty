@@ -1,0 +1,203 @@
+.container
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 100vh;
+    background: #670D19;
+}
+.decoration_lamp
+{
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+.lamp1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.duo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+.duo svg:nth-child(1)
+{
+    position: absolute;
+    z-index: -1;
+}
+.lamp2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.decoration_cloud
+{
+    position: absolute;
+    top: 700px;
+    display: flex;
+    width: clamp(280px, 70vw, 700px);
+    justify-content: space-between;
+}
+.cloud1
+{
+    transform: translateY(-100px);
+}
+.yellow_cloud
+{
+    position: absolute;
+    display: flex;
+    width: clamp(280px, 70vw, 600px);
+    justify-content: space-between;
+}
+.ye_cloud1
+{
+    transform: translateY(-70px);
+}
+.flowers_right
+{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 700px;
+}
+.flowers_left
+{
+    position: absolute;
+    left: 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.back svg
+{
+    width: 80px;
+}
+.content
+{
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+}
+.new_year
+{
+    z-index: 2;
+    padding: 20px;
+}
+.title
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.title_text
+{
+    z-index: 2;
+    width: 18ch;
+    font-weight: 700;
+    color: #FFD700;
+    font-size: clamp(24px, 3vw, 40px);
+    white-space: nowrap; /* не переносить текст на другую строку */
+    overflow: hidden; /* скрываем переполнение контентом */
+    border-right: 3px solid #fff; /* рисуем курсор */
+    animation: cursor 0.75s step-end infinite, printed_text 5s steps(18);
+}
+.title h2
+{
+    font-size: clamp(22px, 3vw, 50px);
+    color: #FFD700;
+    font-weight: 700;
+    line-height: 40px;
+}
+@keyframes cursor {
+    0% {
+      border-color: #fff;
+    }
+  
+    50% {
+      border-color: transparent;
+    }
+  
+    100% {
+      border-color: #fff;
+    }
+  }
+  
+  @keyframes printed_text {
+    from {
+      width: 0;
+    }
+  }
+  
+.massage p
+{
+    color: #fff;
+    font-size: clamp(14px, 3vw, 16px);
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    width: clamp(280px, 50vw, 500px);
+    background: rgba(0,0,0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+.slider_images
+{
+    width: 350px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider
+{
+    width: 100%;
+}
+.sl
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider img
+{
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+}
+@media (max-width: 740px)
+{
+    .ye_cloud1
+    {
+        display: none;
+    }
+    .yellow_cloud
+    {
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 525px)
+{
+    .ye_cloud2
+    {
+        display: none;
+    }
+}
