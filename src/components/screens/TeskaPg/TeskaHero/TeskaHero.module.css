@@ -1,0 +1,143 @@
+.container
+{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    z-index: -1;
+}
+.container::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: url("/images/teska/background.jpg") no-repeat 50% 25%;
+    animation: fly 7s infinite;
+}
+@keyframes fly
+{
+    0%
+    {
+        transform: translateY(20px);
+    }
+    50%
+    {
+        transform: translateY(-20px);
+    }
+    100%
+    {
+        transform: translateY(20px);
+    }
+}
+.content
+{
+    width: clamp(300px, 94vw, 1450px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: flex-end;
+    align-items: center;
+}
+.personal
+{
+    display: flex;
+    width: clamp(200px, 30vw, 400px);
+    height: 400px;
+    align-items: center;
+    z-index: 2;
+    overflow: hidden;
+    animation: flyTeska 8s infinite;
+}
+@keyframes flyTeska
+{
+    0%
+    {
+        transform: translateY(20px);
+    }
+    50%
+    {
+        transform: translateY(-20px);
+    }
+    100%
+    {
+        transform: translateY(20px);
+    }
+}
+.personal img
+{
+    position: absolute;
+    width: 300px;
+    border-radius: 100%;
+    transform: translateX(-50px);
+}
+.personal img:last-child
+{
+    transform: translate(-40px, -40px)
+}
+.desc
+{
+    display: flex;
+    flex-direction: column;
+    width: clamp(280px, 50vw, 700px);
+    gap: 20px;
+    z-index: 2;
+}
+.desc h1
+{
+    color: #bb86fc;
+    font-weight: 700;
+    font-size: clamp(30px, 3vw, 50px);
+    text-shadow: #bb86fc 0 0 30px ;
+}
+.desc p
+{
+    color: #fff;
+    font-size: clamp(12px, 5vw, 16px);
+    font-weight: 300;
+    line-height: 23px;
+    width: clamp(280px, 50vw, 500px);
+}
+.particles {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    bottom: 10;
+}
+.canvas {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 660px)
+{
+    .container
+    {
+        height: 900px;
+    }
+    .content
+    {
+        justify-items: center;
+        grid-template-columns: 1fr
+    }
+    .personal
+    {
+        grid-area: 1;
+    }
+    .desc
+    {
+        align-items: center;
+    }
+    .desc p
+    {
+        text-align: center;
+    }
+}

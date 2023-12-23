@@ -1,0 +1,109 @@
+.container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    z-index: -1;
+    padding: 50px 0;
+}
+.content
+{
+    width: clamp(300px, 94vw, 1450px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    
+}
+.title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.title h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: clamp(30px, 5vw, 50px);
+    color: #bb86fc;
+}
+.title p
+{
+    width: clamp(260px, 40vw, 600px);
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: clamp(12px, 5vw, 16px);
+    color: #fff;
+}
+.twentythree
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.summer2023
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.summer_title2023
+{
+    display: flex;
+    padding: 40px clamp(10px, 3vw, 40px);
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    border: #bb86fc 3px solid;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+.summer2023 video
+{
+    width: clamp(250px, 30vw, 600px);
+    border-radius: 50px;
+}
+.gallery
+{
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     gap: 20px;
+     justify-content: center
+}
+.gallery
+{
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     gap: 20px;
+     justify-content: center
+}
+.gallery img
+{
+    width: clamp(250px, 30vw, 300px);
+    height: 350px;
+    border-radius: 5px;
+    border: #bb86fc 3px solid;
+}
+.gallery img:nth-child(4)
+{
+    width: clamp(250px, 30vw, 400px);
+}
+.gallery img:nth-child(7)
+{
+    width: clamp(250px, 30vw, 400px);
+}

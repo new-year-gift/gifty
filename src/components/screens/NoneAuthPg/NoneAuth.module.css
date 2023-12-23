@@ -1,0 +1,206 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 100vh;
+    background: #670D19;
+    justify-content: center;
+    padding-bottom: 1px;
+}
+
+.decoration_lamp {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.lamp1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.duo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+
+.duo svg:nth-child(1) {
+    position: absolute;
+    z-index: -1;
+}
+
+.lamp2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content h2
+{
+    z-index: 2;
+    font-weight: 700;
+    color: #FFD700;
+    font-size: clamp(24px, 3vw, 40px);
+}
+.decoration_cloud {
+    position: absolute;
+    top: 700px;
+    display: flex;
+    width: clamp(280px, 70vw, 700px);
+    justify-content: space-between;
+}
+
+.cloud1 {
+    transform: translateY(-100px);
+}
+
+.yellow_cloud {
+    position: absolute;
+    display: flex;
+    top: 80px;
+    width: clamp(280px, 70vw, 600px);
+    justify-content: space-between;
+}
+
+.ye_cloud1 {
+    transform: translateY(-70px);
+}
+
+.flowers_right {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 700px;
+}
+
+.flowers_left {
+    position: absolute;
+    left: 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.back svg {
+    width: 80px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.new_year {
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title_text {
+    z-index: 2;
+    font-weight: 700;
+    color: #FFD700;
+    font-size: clamp(24px, 3vw, 50px);
+}
+
+.box-input {
+    position: relative;
+}
+
+.border {
+    background-image: linear-gradient(to right bottom, #e300ff, #ff00aa, #ff5956, #ffb900, #fffe00);
+    box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.5),
+        25px -10px 30px -5px rgba(255, 0, 212, 0.5),
+        25px 10px 30px -5px rgba(255, 174, 0, 0.5),
+        -25px 10px 30px -5px rgba(255, 230, 0, 0.5);
+    padding: 4px;
+}
+
+.input {
+    background-color: #670D19;
+    max-width: 250px;
+    height: 40px;
+    padding: 0 19px 0 10px;
+    font-size: 1.1em;
+    position: relative;
+    border: none;
+    color: white;
+    outline: 0;
+    overflow: hidden;
+}
+
+.box-input::after,
+.box-input::before {
+    content: "";
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+}
+
+.box-input::after {
+    bottom: 0;
+    right: 0;
+}
+
+.box-input::before {
+    top: 0;
+    left: 0;
+}
+
+.input::placeholder {
+    color: #FFD700;
+    transition: all 0.5s ease-in, transform 0.2s ease-in 0.6s;
+}
+
+.input:focus::placeholder {
+    padding-left: 165px;
+    transform: translateY(-50px);
+}
+.content h6
+{
+    z-index: 2;
+    font-weight: 700;
+    color: #ff0000;
+    font-size: clamp(18px, 3vw, 30px);
+}
+@media (max-width: 740px) {
+    .ye_cloud1 {
+        display: none;
+    }
+
+    .yellow_cloud {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 525px) {
+    .ye_cloud2 {
+        display: none;
+    }
+}

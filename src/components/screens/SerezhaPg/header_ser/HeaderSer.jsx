@@ -5,6 +5,21 @@ import { NavLink } from "react-router-dom";
 const HeaderSer = () => {
     return (
         <div className={styles.container}>
+            <div className={styles.utopiaTop}>
+                <img src="/images/sergift/21.png" alt="" />
+                <img src="/images/sergift/21.png" alt="" />
+                <img src="/images/sergift/21.png" alt="" />
+                <img src="/images/sergift/21.png" alt="" />
+                <img src="/images/sergift/21.png" alt="" />
+                <img src="/images/sergift/21.png" alt="" />
+            </div>
+            <div className={styles.utopiaDown}>
+                <img src="/images/sergift/21.png" alt="" />
+                <img src="/images/sergift/21.png" alt="" />
+                <img src="/images/sergift/21.png" alt="" />
+                <img src="/images/sergift/21.png" alt="" />
+                <img src="/images/sergift/21.png" alt="" />
+            </div>
             <div className={styles.navigation_bar}>
                 <div className={styles.navigation_box}>
                     <NavLink to="/" className={styles.nav} style={({ isActive }) => ({
@@ -16,16 +31,6 @@ const HeaderSer = () => {
                         color: isActive ? '#bb86fc' : '#fff',
                     })}>
                         Сережа
-                    </NavLink>
-                    <NavLink to="/патёсак" className={styles.nav} style={({ isActive }) => ({
-                        color: isActive ? '#fff' : '#fff',
-                    })}>
-                        Патёсак
-                    </NavLink>
-                    <NavLink to="/анька" className={styles.nav} style={({ isActive }) => ({
-                        color: isActive ? '#fff' : '#fff',
-                    })}>
-                        Анька
                     </NavLink>
                 </div>
             </div>

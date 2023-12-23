@@ -30,3 +30,48 @@
     font-weight: 600;
     line-height: normal;
 }
+.utopiaTop
+{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 3;
+
+}
+.utopiaTop img
+{
+    width: 90px;
+    height: 40px;
+}
+.utopiaDown
+{
+    position: absolute;
+    top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 3;
+
+}
+.utopiaDown img
+{
+    width: 90px;
+    height: 40px;
+}
+@media (max-width: 450px)
+{
+    .utopiaTop img:last-child
+    {
+        display: none;
+    }
+    .utopiaTop img:first-child
+    {
+        display: none;
+    }
+    .utopiaDown img:last-child
+    {
+        display: none;
+    }
+}
